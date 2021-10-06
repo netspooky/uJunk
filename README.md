@@ -1,2 +1,4 @@
 # toolz
-An unsorted collection of little tools and scripts I've made that don't fit anywhere else
+
+I have a bad habit of making a million gists and other pastes containing things I've made. I am going to start putting them all here, so that both of us can find them if needed.
+
