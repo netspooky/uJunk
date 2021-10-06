@@ -1,0 +1,159 @@
+<!-- This is an annotated sublime text theme that tries to be somewhat sorted for developing and tweaking -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>comment</key>
+    <string>Check here for more info on scope https://www.sublimetext.com/docs/3/scope_naming.html</string>
+    <key>name</key>
+    <string>TEST SCHEME</string>
+    <key>settings</key>
+    <array>
+        <dict> <!-- Global Settings -->
+          <key>settings</key>
+          <dict>
+            <key>background</key> <string>#13161a</string>
+            <key>caret</key> <string>#ffffff</string>
+            <key>foreground</key> <string>#ffffff</string>
+            <key>invisibles</key> <string>#434D5B</string>
+            <key>lineHighlight</key> <string>#343c48</string>
+            <key>selection</key> <string>#434D5B</string>
+          </dict>
+        </dict>
+        <dict> <!-- All comments, grey and italic. You can also color the punctuation used in comments with punctuation.definition.comment -->
+          <key>name</key> <string>Comment</string>
+          <key>scope</key> <string>comment, punctuation.definition.comment, string.quoted.double.block.python</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#7c899c</string> </dict>
+        </dict>
+        <dict> <!-- Clean this one up -->
+          <key>name</key> <string>Foreground</string>
+          <key>scope</key> <string>keyword.operator.class, source.php.embedded.line, meta.method punctuation.definition, meta.method punctuation.separator</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#CED1CF</string> </dict>
+        </dict>
+        <dict> <!-- fffbd4: light yellow, fff9bb: darker yellow -->
+            <!-- I don't think declaration.tag, meta.expression.body.function is even used anymore -->
+          <key>name</key> <string>Variable, String Link, Regular Expression, Tag Name</string>
+          <key>scope</key> <string>variable, support.other.variable, string.other.link, string.regexp, declaration.tag, meta.expression.body.function, string.unquoted.label</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#fffbd4</string> </dict>
+        </dict>
+        <dict> <!-- When a function is stored in a variable or called within another function a1aaff: pastel purple, 8affc5: pastel green-->
+          <key>name</key> <string>Variable Function</string>
+          <key>scope</key> <string>variable.function</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#8affc5</string> </dict>
+        </dict>
+        <dict> <!-- Any variable param ffd4ee: pink-->
+          <key>name</key> <string>Variable Parameter</string>
+          <key>scope</key> <string>variable.parameter</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#ffd4ee</string> </dict>
+        </dict>
+        <dict><!-- These are numbers embedded as arguments cbfff8 - cyan-->
+          <key>name</key> <string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
+          <key>scope</key> <string>constant.language, constant.other, support.constant, keyword.other.unit, meta.property-value, punctuation.section.embedded</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#cbfff8</string> </dict>
+        </dict>
+        <dict> <!-- This is any number on it's own ffb26d: orange -->
+          <key>name</key> <string>Constant Numeric</string>
+          <key>scope</key> <string>constant.numeric</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#ffb26d</string> </dict>
+        </dict>
+        <dict> <!-- This is like: CONSTANT = something, the CONSTANT part 4ce1c3: teal -->
+          <key>name</key> <string>Constant Variables</string>
+          <key>scope</key> <string>variable.other.constant</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#4ce1c3</string> </dict>
+        </dict>
+        <dict> <!-- This class one will need to be split out a bit ff0335: red-->
+          <key>name</key> <string>Class, Support</string>
+          <key>scope</key> <string>entity.name.class, entity.name.type.class, entity.name.type.instance, entity.name.instance, meta.instance.constructor, meta.property.class, variable.other.class, class.name, support.type, support.class, storage.type</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#ff0335</string> <key>fontStyle</key> <string>italic</string> </dict>
+        </dict>
+        <dict> <!-- All strings -->
+          <key>name</key> <string>String, Symbols, Inherited Class, Markup Heading</string>
+          <key>scope</key> <string>string, constant.other.symbol, entity.other.inherited-class</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#cbced3</string> </dict>
+        </dict>
+        <dict> <!-- Don't really know what these are ffb5a0:peachy/salmon -->
+          <key>name</key> <string>Operator, Misc</string>
+          <key>scope</key> <string> entity.other.attribute-name, constant.other.color, constant.character</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#ffb5a0</string> </dict>
+        </dict>
+        <dict> <!-- These are keywords like if, else etc. e14c6a: reddish-->
+          <key>name</key> <string>Keyword Control</string>
+          <key>scope</key> <string>keyword.control</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#e14c6a</string> </dict>
+        </dict>
+        <dict> <!-- These are for import/include statments 6dbaff: blue-->
+          <key>name</key> <string>Keyword Import</string>
+          <key>scope</key> <string>keyword.control.import</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#6dbaff</string> </dict>
+        </dict>
+        <dict> <!-- These are equal signs, plus, etc e14c6a: reddish -->
+          <key>name</key> <string>Keyword Operator</string>
+          <key>scope</key> <string>keyword.operator</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#b9ffda</string> </dict>
+        </dict>
+        <dict> <!-- Function Names a1aaff: pastel purple -->
+          <key>name</key> <string>Function, Special Method, Block Level</string>
+          <key>scope</key> <string>entity.name.function, support.function, keyword.other.special-method, entity.name.method, meta.accessor, meta.block-level, function.name</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#a1aaff</string> </dict>
+        </dict>
+        <dict> <!-- These color html tags and xml keys 8affc5: green -->
+          <key>name</key> <string>Keyword, Storage</string>
+          <key>scope</key> <string>entity.name.tag.css, meta.tag, entity.name.tag</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#8affc5</string> </dict>
+        </dict>
+        <dict> <!-- These are for like variable types, eg. const char etc.. 8affff: blue  -->
+          <key>name</key> <string>Keyword, Storage</string>
+          <key>scope</key> <string>keyword, storage, storage.type</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#8affff</string> <key>fontStyle</key> <string>italic</string> </dict>
+        </dict>
+<!--- Diff Settings -->
+        <dict>
+          <key>name</key> <string>Diff foreground</string>
+          <key>scope</key> <string>markup.inserted.diff, markup.deleted.diff, meta.diff.header.to-file, meta.diff.header.from-file</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#ffffff</string> </dict>
+        </dict>
+        <dict>
+          <key>name</key> <string>Diff insertion</string>
+          <key>scope</key> <string>markup.inserted.diff, meta.diff.header.to-file</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#b6f4c5</string> </dict>
+        </dict>
+        <dict> 
+          <key>name</key> <string>Diff deletion</string>
+          <key>scope</key> <string>markup.deleted.diff, meta.diff.header.from-file</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#f4b6e5</string> </dict>
+        </dict>
+        <dict>
+          <key>name</key> <string>Diff header</string>
+          <key>scope</key> <string>meta.diff.header.from-file, meta.diff.header.to-file</string>
+          <key>settings</key> <dict> <key>fontStyle</key> <string>bold</string> <key>foreground</key> <string>#ffffff</string> <key>background</key> <string>#4f0092</string> </dict>
+        </dict>
+        <dict>
+          <key>name</key> <string>Diff range</string>
+          <key>scope</key> <string>meta.diff.range</string>
+          <key>settings</key> <dict> <key>fontStyle</key> <string>italic</string> <key>foreground</key> <string>#e5f4b6</string> </dict>
+        </dict>
+        <dict>
+          <key>name</key> <string>diff.deleted</string>
+          <key>scope</key> <string>markup.deleted</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#F92672</string> </dict>
+        </dict>
+        <dict>
+          <key>name</key> <string>diff.inserted</string>
+          <key>scope</key> <string>markup.inserted</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#A6E22E</string> </dict>
+        </dict>
+        <dict>
+          <key>name</key> <string>diff.changed</string>
+          <key>scope</key> <string>markup.changed</string>
+          <key>settings</key> <dict> <key>foreground</key> <string>#967EFB</string> </dict>
+         </dict>
+<!-- End of Diff Settings -->
+    </array>
+    <key>uuid</key>
+    <string>49507ab6-733d-4f6c-b4e8-34b8a673e7b0</string>
+    <key>colorSpaceName</key>
+    <string>sRGB</string>
+    <key>semanticClass</key>
+    <string>theme.dark.testthemeuwu</string>
+</dict>
+</plist>
